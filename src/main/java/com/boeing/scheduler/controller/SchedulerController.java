@@ -8,6 +8,7 @@ import com.boeing.scheduler.repository.PilotRepository;
 import com.boeing.scheduler.services.ScheduleService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.web.bind.annotation.*;
 
@@ -16,6 +17,9 @@ import java.util.List;
 @RestController
 @Tag(name = "Scheduler Controller", description = "Endpoints for managing pilots, flights, and schedules")
 @RequestMapping("/api")
+@SpringBootApplication
+@ComponentScan(basePackages = "com.boeing.scheduler")
+
 public class SchedulerController {
 
     private final PilotRepository pilotRepo;

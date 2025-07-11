@@ -1,4 +1,4 @@
-package com.boeing.scheduler.pilot_scheduler;
+package com.boeing.scheduler;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
