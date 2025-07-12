@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan(basePackages = "com.boeing.scheduler")@OpenAPIDefinition(info = @Info(title = "Pilot Scheduler API", version = "1.0", description = "API for managing pilot assignments to flights"))
+@OpenAPIDefinition(info = @Info(title = "Pilot Scheduler API", version = "1.0", description = "API for managing pilot assignments to flights"))
 public class PilotSchedulerApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(PilotSchedulerApplication.class, args);

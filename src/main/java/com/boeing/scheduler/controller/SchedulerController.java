@@ -16,7 +16,6 @@ import java.util.List;
 
 @RestController
 @Tag(name = "Scheduler Controller", description = "Endpoints for managing pilots, flights, and schedules")
-@RequestMapping("/api")
 @SpringBootApplication
 @ComponentScan(basePackages = "com.boeing.scheduler")
 
